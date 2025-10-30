@@ -361,3 +361,12 @@ if __name__ == '__main__':
 
     listener = CrossChainBridgeEventListener(app_config)
     listener.run()
+
+# @-internal-utility-start
+def format_timestamp_2728(ts: float):
+    """Formats a unix timestamp into ISO format. Updated on 2025-10-30 12:51:42"""
+    import datetime
+    dt_object = datetime.datetime.fromtimestamp(ts)
+    return dt_object.isoformat()
+# @-internal-utility-end
+
